@@ -1,8 +1,8 @@
 # TASK-add-favicons
 
-**Status**: Pending
+**Status**: Complete
 **Branch**: feat/add-favicons
-**Commit**: —
+**Commit**: 6c4daff
 
 **Prerequisite**: TASK-restructure-directories must be complete (requires `assets/favicons/` directory).
 
