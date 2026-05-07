@@ -25,3 +25,15 @@ python -m http.server 8000
 ```
 
 Then open http://localhost:8000.
+
+## Deployment
+
+The site deploys automatically to GitHub Pages on every push to `main` via GitHub Actions (`.github/workflows/deploy.yml`). No build step — the repository is the deployable artifact.
+
+To configure GitHub Pages: go to **Settings → Pages** and set the source to **GitHub Actions**.
+
+If using a custom domain, add a `CNAME` file at the repository root containing the domain name.
+
+## Standards
+
+Engineering and design standards live in `standards/` (a git submodule from [3D-Intelligence/standards](https://github.com/3D-Intelligence/standards)). See `CLAUDE.md` for which standards apply to this project.
