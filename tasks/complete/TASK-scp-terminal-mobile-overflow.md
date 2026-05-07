@@ -1,8 +1,8 @@
 # TASK-scp-terminal-mobile-overflow
 
-**Status**: Pending
+**Status**: Complete
 **Branch**: main
-**Commit**: —
+**Commit**: 0dd909f
 
 ## Problem
 
