@@ -1,8 +1,8 @@
 # TASK-extract-css
 
-**Status**: Pending
-**Branch**: feat/extract-css
-**Commit**: —
+**Status**: Complete
+**Branch**: main
+**Commit**: 9442e3d
 
 **Prerequisite**: TASK-restructure-directories must be complete (requires `css/` directory).
 

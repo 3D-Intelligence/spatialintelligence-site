@@ -1,8 +1,8 @@
 # TASK-add-meta-seo
 
-**Status**: Pending
+**Status**: Complete
 **Branch**: feat/add-meta-seo
-**Commit**: —
+**Commit**: 9a4301d
 
 ## Problem
 

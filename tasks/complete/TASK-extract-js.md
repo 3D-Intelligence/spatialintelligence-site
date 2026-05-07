@@ -1,8 +1,8 @@
 # TASK-extract-js
 
-**Status**: Pending
-**Branch**: feat/extract-js
-**Commit**: —
+**Status**: Complete
+**Branch**: main
+**Commit**: f52fe0f
 
 **Prerequisite**: TASK-restructure-directories must be complete (requires `js/` directory).
 
