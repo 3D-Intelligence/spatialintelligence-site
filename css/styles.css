@@ -537,6 +537,7 @@ section.section {
   letter-spacing: -0.01em;
 }
 .footer-brand em { color: var(--teal); font-style: normal; }
+.footer-brand-mark { width: 28px; height: 24px; flex-shrink: 0; }
 .footer-tag {
   font-family: var(--font-mono);
   font-size: 11px;
