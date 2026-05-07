@@ -4,6 +4,7 @@
 —— Spatial Intelligence · Deeptech AI
 
 # Tools for machines to understand 3D environments.
+
 > A deeptech AI startup building AI that understands the structural and content of physical space — enabling machines to reason, build and operate in 3D.
 Unlocking new frontiers across gaming, architecture, and robotics.
 

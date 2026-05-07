@@ -1,8 +1,8 @@
 # TASK-add-deploy-workflow
 
-**Status**: Pending
+**Status**: Complete
 **Branch**: feat/add-deploy-workflow
-**Commit**: —
+**Commit**: 193b933
 
 ## Problem
 
