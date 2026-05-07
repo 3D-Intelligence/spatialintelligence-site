@@ -26,6 +26,12 @@ python -m http.server 8000
 
 Then open http://localhost:8000.
 
+To make accessible over the network (e.g. to test on a mobile device), bind to the wildcard address `0.0.0.0`:
+
+```bash
+python -m http.server 8000 --bind 0.0.0.0
+```
+
 ## Deployment
 
 The site deploys automatically to GitHub Pages on every push to `main` via GitHub Actions (`.github/workflows/deploy.yml`). No build step — the repository is the deployable artifact.
