@@ -396,6 +396,8 @@ section.section {
   font-size: 12.5px;
   line-height: 1.7;
   color: var(--terminal-fg);
+  overflow-wrap: break-word;
+  min-width: 0;
 }
 .terminal-text em { color: oklch(78% 0.14 75); font-style: normal; }
 .terminal-text strong { color: oklch(68% 0.14 195); font-weight: 500; }
@@ -594,9 +596,15 @@ section.section {
 }
 
 @media (max-width: 900px) {
-  .pillar { grid-template-columns: 1fr; gap: 40px; }
+  .pillar { grid-template-columns: minmax(0, 1fr); gap: 40px; }
 }
 
 @media (max-width: 800px) {
   .footer-inner { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 700px) {
+  .container { padding: 0 24px; }
+  .nav-inner  { padding: 18px 24px; }
+  .footer-inner { grid-template-columns: 1fr; }
 }
