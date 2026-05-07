@@ -1,8 +1,8 @@
 # TASK-update-header-footer-links
 
-**Status**: Pending
+**Status**: Complete
 **Branch**: main
-**Commit**: —
+**Commit**: cc1f796
 
 ## Problem
 
