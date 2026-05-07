@@ -1,8 +1,8 @@
 # TASK-restructure-directories
 
-**Status**: Pending
+**Status**: Complete
 **Branch**: feat/restructure-directories
-**Commit**: —
+**Commit**: c3be2bd
 
 ## Problem
 
