@@ -3,8 +3,8 @@
 
 —— Spatial Intelligence · Deeptech AI
 
-# Tools for machines that understand 3D environments.
-> A deeptech AI startup building AI that understands the structural and content of physical space — for machines that reason, build and operate in 3D.
+# Tools for machines to understand 3D environments.
+> A deeptech AI startup building AI that understands the structural and content of physical space — enabling machines to reason, build and operate in 3D.
 Unlocking new frontiers across gaming, architecture, and robotics.
 
 | PRODUCT | APPLIED AI RESEARCH | FUNDAMENTAL AI RESEARCH |
@@ -22,14 +22,14 @@ Unlocking new frontiers across gaming, architecture, and robotics.
 
 ## Spintel
 
-SCENES FROM NATURAL LANGUAGE
+SCENES FROM TEXT DESCRIPTIONS
 
 > A product suite for generating production-ready 3D environments from natural language descriptions.
 
 Describe a building.
 Get a fully furnished, physics-valid scene — floor plan, furniture, wall fixtures, ceiling fixtures, small objects — ready for game engines, simulators, and renders.
 
-[OPEN SPINTEL ➡]()
+[OPEN SPINTEL ➡](https://spintel.spatial-intelligence.co.uk/)
 
 ![alt text](assets/top_down.png)
 | Fig. 1 · top_down.png | &emsp; <space> &emsp; <space> &emsp; <space> &emsp; <space> &emsp; <space> &emsp; <space> &emsp; <space> &emsp; <space> &emsp; <space> &emsp; <space> &emsp; <space> &emsp; <space> &emsp; <space> &emsp; <space> &emsp; <space> &emsp; <space> &emsp; <space> &emsp; <space> | Spintel · text → scene |
@@ -54,7 +54,7 @@ SPATIAL CONTEXT PROTOCOL
 SCP enables LLMs to navigate buildings, identify locations, and control their environment in real time.
 Any space — generated, scanned, or hand-modelled — becomes a queryable, actuatable graph the agent can reason over.
 
-[READ THE SPEC ➡]()
+[READ THE SPEC ➡](https://spatialcontextprotocol.github.io/)
 
 scp-agent · session 01
 >
@@ -64,26 +64,26 @@ scp-agent · session 01
 > &nbsp; **› Turn off the lights in the lecture hall.**  
 > → Resolved 6 lighting fixtures in lecture_hall_01. Issuing scp.actuate(zone="lecture_hall_01", target="lights", state="off") — done.
 
-Live agent transcript. SCP exposes a building as a compact, LLM-interpretable spatial model — lightweight enough to run on modest hardware.
+> Live agent transcript. SCP exposes a building as a compact, LLM-interpretable spatial model — lightweight enough to run on modest hardware.
 
 ---
 
 <br>
 <br>
 
-03 · Fundamental AI Research — CORD
+03 · Fundamental AI Research — OBJECT REPRESENTATION LEARNING
 
 * RESEARCH PROGRAMME
 
 ## CORD
 
-Compositional Object Representation via Detection
+OBJECT-CENTRIC WORLD MODELLING
 
 > Learning structured, holistic object representations from object detection.
 
 KEY INSIGHT
 
-Object queries that capture **what** an object is, **where** it sits, what it canonically looks like, and how it relates to everything else in the scene — substantially richer than detection training alone.
+World modelling requires object queries that capture **what** an object is, **where** it sits, what it canonically looks like, and how it relates to everything else in the scene — substantially richer than detection training alone.
 
 | | |
 |---|---|
@@ -91,7 +91,7 @@ Object queries that capture **what** an object is, **where** it sits, what it ca
 | 03 · Class Prototype <br> **How it looks** <br> canonical class appearance & characteristics | 04 · Relational <br> **How it relates** <br> scene-graph context & affordances |
 |---|---|
 
-Compositional object queries decomposes a detected object into four complementary channels — rich substrates for object-centric world modelling with true object and spatial reasoning.
+> Compositional object queries decomposes a detected object into four complementary channels — rich substrates for object-centric world modelling with true object and spatial reasoning.
 
 ---
 
@@ -106,7 +106,7 @@ We're a small deeptech team. If you're building agents, simulators, or pipelines
 
 | | |
 |---|---|
-| [hello@spatial-intelligence.co.uk →]() | Careers |
+| [hello@spatial-intelligence.co.uk →](mailto:hello@spatial-intelligence.co.uk) | Careers |
 
 ---
 
