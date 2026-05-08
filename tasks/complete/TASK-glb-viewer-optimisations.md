@@ -1,8 +1,8 @@
 # TASK-glb-viewer-optimisations
 
-**Status**: Pending
+**Status**: Complete
 **Branch**: main
-**Commit**: —
+**Commit**: c84e12c
 
 ## Problem
 
