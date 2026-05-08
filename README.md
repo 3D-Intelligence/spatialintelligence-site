@@ -1,6 +1,6 @@
 # Spatial Intelligence Site
 
-[Spatial Intelligence](https://www.spatial-intelligence.co.uk) is a deeptech AI startup building AI that understands the structure, content and meaning of physical space — for machines that reason, build and operate in 3D. Unlocking new frontiers across gaming, architecture, and robotics.
+[Spatial Intelligence](https://spatial-intelligence.co.uk) is a deeptech AI startup building AI that understands the structure, content and meaning of physical space — for machines that reason, build and operate in 3D. Unlocking new frontiers across gaming, architecture, and robotics.
 
 ## Cloning
 

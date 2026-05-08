@@ -22,16 +22,16 @@ Add the following to the `<head>` of `index.html`, after the `<meta charset>` an
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.spatial-intelligence.co.uk/">
+<meta property="og:url" content="https://spatial-intelligence.co.uk/">
 <meta property="og:title" content="Spatial Intelligence — Tools for machines to understand 3D environments">
 <meta property="og:description" content="Spatial Intelligence builds AI that understands the structure, content and meaning of physical space — across gaming, architecture, and robotics.">
-<meta property="og:image" content="https://www.spatial-intelligence.co.uk/assets/images/og-image.png">
+<meta property="og:image" content="https://spatial-intelligence.co.uk/assets/images/og-image.png">
 
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Spatial Intelligence — Tools for machines to understand 3D environments">
 <meta name="twitter:description" content="Spatial Intelligence builds AI that understands the structure, content and meaning of physical space — across gaming, architecture, and robotics.">
-<meta name="twitter:image" content="https://www.spatial-intelligence.co.uk/assets/images/og-image.png">
+<meta name="twitter:image" content="https://spatial-intelligence.co.uk/assets/images/og-image.png">
 ```
 
 The `og:image` should be a 1200×630px PNG placed at `assets/images/og-image.png`.
