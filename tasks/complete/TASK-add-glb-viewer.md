@@ -1,8 +1,8 @@
 # TASK-add-glb-viewer
 
-**Status**: Pending
+**Status**: Complete
 **Branch**: feat/add-glb-viewer
-**Commit**: —
+**Commit**: 4bc880f
 
 **Prerequisite**: TASK-restructure-directories must be complete (requires `js/` and `assets/models/`).
 
