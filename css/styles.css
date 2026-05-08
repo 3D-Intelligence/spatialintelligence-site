@@ -608,3 +608,43 @@ section.section {
   .nav-inner  { padding: 18px 24px; }
   .footer-inner { grid-template-columns: 1fr; }
 }
+
+/* ── Viewer ──────────────────────────────────────── */
+.figure--viewer .figure-img-wrap {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.figure--viewer canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.viewer-loading,
+.viewer-hint {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--fg);
+  pointer-events: none;
+}
+
+.viewer-hint {
+  bottom: 32px;
+  transition: opacity 0.6s ease;
+  text-shadow:
+    0 0 8px rgba(0, 0, 0, 0.9),
+    0 0 16px rgba(0, 0, 0, 0.8),
+    0 1px 3px rgba(0, 0, 0, 1);
+}
+
+.viewer-hint--hidden {
+  opacity: 0;
+}
