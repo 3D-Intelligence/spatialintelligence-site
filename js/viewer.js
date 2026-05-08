@@ -23,6 +23,18 @@ function init() {
   const canvas = document.getElementById('spintel-viewer');
   if (!canvas) return;
 
+  // Defer all Three.js work until the canvas enters the viewport.
+  // This avoids expensive WebGL init competing with CSS transitions on page load,
+  // and also defers the GLB fetch until the user is likely to see the viewer.
+  const initObserver = new IntersectionObserver((entries) => {
+    if (!entries[0].isIntersecting) return;
+    initObserver.disconnect();
+    startViewer(canvas);
+  }, { threshold: 0.1 });
+  initObserver.observe(canvas);
+}
+
+function startViewer(canvas) {
   const hint = document.querySelector('.viewer-hint');
 
   // ── Renderer ──────────────────────────────────────
@@ -60,16 +72,22 @@ function init() {
   controls.autoRotate = true;
   controls.autoRotateSpeed = 0.6;
 
-  // Stop auto-rotate and fade hint on first interaction
+  // Disable zoom until the user explicitly interacts with the viewer.
+  // OrbitControls registers a { passive: false } wheel listener that calls
+  // preventDefault(), silently blocking page scroll when the cursor is over
+  // the canvas. Re-enable zoom only on the first pointerdown.
+  controls.enableZoom = false;
+
+  // Stop auto-rotate, fade hint, and enable zoom on first interaction
   let interacted = false;
   function onInteract() {
     if (interacted) return;
     interacted = true;
     controls.autoRotate = false;
+    controls.enableZoom = true;
     if (hint) hint.classList.add('viewer-hint--hidden');
   }
   renderer.domElement.addEventListener('pointerdown', onInteract, { once: true });
-  renderer.domElement.addEventListener('wheel', onInteract, { once: true });
 
   // R key cycles through ROTATION_SPEEDS
   let speedIndex = 0;
@@ -156,12 +174,37 @@ function init() {
   renderer.setSize(w, h, false);
 
   // ── Render loop ───────────────────────────────────
+  let animHandle = null;
+
   function animate() {
-    requestAnimationFrame(animate);
+    animHandle = requestAnimationFrame(animate);
     controls.update();
     renderer.render(scene, camera);
   }
-  animate();
+
+  function startLoop() {
+    if (animHandle !== null) return;
+    animHandle = requestAnimationFrame(animate);
+  }
+
+  function stopLoop() {
+    cancelAnimationFrame(animHandle);
+    animHandle = null;
+  }
+
+  // Pause when scrolled off-screen; resume when back in view.
+  const visObserver = new IntersectionObserver(
+    (entries) => entries[0].isIntersecting ? startLoop() : stopLoop(),
+    { threshold: 0.05 }
+  );
+  visObserver.observe(canvas);
+
+  // Pause when the browser tab is hidden.
+  document.addEventListener('visibilitychange', () => {
+    document.hidden ? stopLoop() : startLoop();
+  });
+
+  startLoop();
 }
 
 init();
