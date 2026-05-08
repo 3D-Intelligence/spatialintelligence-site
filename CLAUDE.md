@@ -1,5 +1,9 @@
 # Spatial Intelligence Site — Coding Agent Instructions
 
+IMPORTANT: This is a no-build static site. Do not add npm, a package.json, node_modules, or any build step.
+
+---
+
 ## Safety
 
 Never read or commit `.env` files.
